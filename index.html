@@ -6,6 +6,9 @@
     <title>PORTAL_CPM_YON</title>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* Ajuste para evitar desbordamiento */
+        * { box-sizing: border-box; }
+
         :root {
             --neon-cyan: #00ffea;
             --neon-pink: #ff00de;
@@ -56,11 +59,12 @@
             align-items: center;
             justify-content: center;
             z-index: 9999;
+            padding: 20px;
         }
 
         .modal-box {
             background: #0a0a0a;
-            width: 90%;
+            width: 100%;
             max-width: 500px;
             padding: 30px;
             border: 3px solid var(--neon-pink);
@@ -85,7 +89,8 @@
 
         /* --- CONTENIDO PRINCIPAL --- */
         .main-wrapper {
-            max-width: 900px;
+            max-width: 100%;
+            width: 900px;
             margin: 0 auto;
             padding: 40px 20px;
             text-align: center;
@@ -100,10 +105,11 @@
         }
 
         h1 {
-            font-size: clamp(2rem, 8vw, 4rem);
+            font-size: clamp(1.8rem, 8vw, 4rem); /* Ajuste dinámico para móvil */
             text-shadow: 0 0 15px var(--neon-cyan);
             margin-bottom: 5px;
             letter-spacing: 2px;
+            overflow-wrap: break-word;
         }
 
         .status-header {
@@ -118,6 +124,7 @@
             margin: 40px 0 80px 0;
             background: #000;
             line-height: 0;
+            max-width: 100%;
         }
 
         .media-container img {
@@ -152,6 +159,7 @@
             background: rgba(0, 255, 234, 0.05);
             transition: 0.3s;
             font-weight: bold;
+            overflow-wrap: break-word;
         }
 
         .cyber-button:hover {
@@ -187,6 +195,11 @@
             padding: 30px;
             border: 1px dashed var(--neon-cyan);
             background: rgba(0, 255, 234, 0.02);
+            max-width: 100%;
+        }
+
+        .service-box p {
+            overflow-wrap: break-word; /* Evita que el texto se salga en móvil */
         }
 
         footer {
