@@ -40,12 +40,18 @@
 
         @keyframes waGreenYellow {
             0% { border-color: #25d366; color: #25d366; box-shadow: 0 0 10px #25d366; }
-            100% { border-color: #ffee00; color: #ffee00; box-shadow: 0 0 10px #ffee00; }
+            25% { border-color: #ffee00; color: #ffee00; box-shadow: 0 0 15px #ffee00; }
+            50% { border-color: #00ffea; color: #00ffea; box-shadow: 0 0 10px #00ffea; }
+            75% { border-color: #ff00de; color: #ff00de; box-shadow: 0 0 15px #ff00de; }
+            100% { border-color: #25d366; color: #25d366; box-shadow: 0 0 10px #25d366; }
         }
 
         @keyframes tgBlueRed {
             0% { border-color: #0088cc; color: #0088cc; box-shadow: 0 0 10px #0088cc; }
-            100% { border-color: #ff0000; color: #ff0000; box-shadow: 0 0 10px #ff0000; }
+            25% { border-color: #ff0000; color: #ff0000; box-shadow: 0 0 15px #ff0000; }
+            50% { border-color: #9d00ff; color: #9d00ff; box-shadow: 0 0 10px #9d00ff; }
+            75% { border-color: #ffea00; color: #ffea00; box-shadow: 0 0 15px #ffea00; }
+            100% { border-color: #0088cc; color: #0088cc; box-shadow: 0 0 10px #0088cc; }
         }
 
         /* --- MODAL DE ADVERTENCIA --- */
@@ -183,11 +189,11 @@
 
         /* --- BOTONES ESPECIFICOS --- */
         .btn-wa {
-            animation: waGreenYellow 3s infinite alternate ease-in-out;
+            animation: waGreenYellow 25s infinite alternate ease-in-out;
         }
 
         .btn-tg {
-            animation: tgBlueRed 3s infinite alternate ease-in-out;
+            animation: tgBlueRed 25s infinite alternate ease-in-out;
         }
 
         .service-box {
